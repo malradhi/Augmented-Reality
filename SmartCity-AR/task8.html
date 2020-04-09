@@ -10,7 +10,6 @@
         <a-scene embedded arjs>
             <a-assets>
 				<video id="penguin-sledding" autoplay  loop="true" src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4" type=video/mp4></video>
-                <audio id="helmet_sound" src="https://ucarecdn.com/e01a0015-866a-4b21-9cdf-85383e4f06f6/" crossorigin="anonymous" autoplay="true" loop preload></audio>
                 <a-asset-item id="helmet" src="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/KhronosGroup/glTF-Sample-Models/master/2.0/SciFiHelmet/glTF/SciFiHelmet.gltf"></a-asset-item>
             </a-assets>
 
@@ -28,7 +27,6 @@
 
                 <!-- second entity: reference to the above audio -->
 				<a-video src="#penguin-sledding" width="16" height="9" position="0 0 -20"></a-video>
-                <a-entity sound="src: #helmet_sound; volume: 1; loop: true">
                 </a-entity>
             </a-marker>
 
